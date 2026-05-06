@@ -4,4 +4,4 @@
 - [x] Run quick syntax checks.
 - [x] Initialize local Git repository and create first commit.
 - [x] Create GitHub repository named GX Video BG.
-- [ ] Push local project to GitHub.
+- [x] Push local project to GitHub.

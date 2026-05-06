@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "gx/video-bg",
+	"version": "1.0.0",
+	"title": "Video Background",
+	"category": "design",
+	"description": "Container with a looping video background. Nest any blocks inside. Supports focal point, fixed scroll-follow, and overlay tint.",
+	"keywords": ["video", "background", "hero", "parallax", "cover"],
+	"textdomain": "gx-videobg",
+	"supports": {
+		"align": ["wide", "full"],
+		"anchor": true,
+		"html": false,
+		"spacing": {
+			"padding": true,
+			"margin": ["top", "bottom"]
+		},
+		"color": {
+			"text": true,
+			"background": false,
+			"link": true
+		}
+	},
+	"attributes": {
+		"videoUrl":      { "type": "string", "default": "" },
+		"videoId":       { "type": "number" },
+		"videoMime":     { "type": "string", "default": "video/mp4" },
+		"posterUrl":     { "type": "string", "default": "" },
+		"posterId":      { "type": "number" },
+		"heightMode":    { "type": "string", "default": "viewport" },
+		"customHeight":  { "type": "string", "default": "60vh" },
+		"minHeight":     { "type": "string", "default": "" },
+		"focalX":        { "type": "number", "default": 50 },
+		"focalY":        { "type": "number", "default": 50 },
+		"fixed":         { "type": "boolean", "default": false },
+		"overlayColor":  { "type": "string", "default": "#000000" },
+		"overlayOpacity":{ "type": "number", "default": 30 },
+		"autoplay":      { "type": "boolean", "default": true },
+		"loop":          { "type": "boolean", "default": true },
+		"muted":         { "type": "boolean", "default": true },
+		"playsinline":   { "type": "boolean", "default": true },
+		"disableMobile": { "type": "boolean", "default": false },
+		"contentAlign":  { "type": "string", "default": "center" },
+		"contentMaxWidth":{ "type": "string", "default": "" }
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle":  "file:./build/editor.css",
+	"style":        "file:./build/style.css",
+	"icon": "format-video"
+}

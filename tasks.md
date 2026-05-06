@@ -1,0 +1,7 @@
+- [x] Review project files for publish readiness.
+- [x] Check for obvious secrets or credentials.
+- [x] Add Git ignore rules for local-only files.
+- [x] Run quick syntax checks.
+- [ ] Initialize local Git repository and create first commit.
+- [ ] Create GitHub repository named GX Video BG.
+- [ ] Push local project to GitHub.
